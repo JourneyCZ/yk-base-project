@@ -1,5 +1,6 @@
 <template>
   <h1>首页</h1>
+  <el-button>11</el-button>
 </template>
 
 <script setup lang="ts">

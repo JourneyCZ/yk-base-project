@@ -1,11 +1,18 @@
 import { createRouter, RouteRecordRaw, createWebHistory } from 'vue-router'
+import AppLayout from '@/layout/AppLayout.vue'
 
 // 路由规则
 const routes: RouteRecordRaw[] = [
   {
-    path: '',
-    name: 'home',
-    component: () => import('@/views/home.vue')
+    path: '/',
+    component: AppLayout,
+    children: [
+      {
+        path: '/',
+        name: 'home',
+        component: () => import('@/views/home.vue')
+      }
+    ]
   }
 ]
 

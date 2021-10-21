@@ -1,0 +1,58 @@
+<template>
+  <el-menu
+    active-text-color="#ffd04b"
+    background-color="#545c64"
+    class="el-menu-vertical-demo"
+    default-active="2"
+    text-color="#fff"
+  >
+    <el-sub-menu index="1">
+      <template #title>
+        <i class="el-icon-location" />
+        <span>Navigator One</span>
+      </template>
+      <el-menu-item-group title="Group One">
+        <el-menu-item index="1-1">
+          item one
+        </el-menu-item>
+        <el-menu-item index="1-2">
+          item one
+        </el-menu-item>
+      </el-menu-item-group>
+      <el-menu-item-group title="Group Two">
+        <el-menu-item index="1-3">
+          item three
+        </el-menu-item>
+      </el-menu-item-group>
+      <el-sub-menu index="1-4">
+        <template #title>
+          item four
+        </template>
+        <el-menu-item index="1-4-1">
+          item one
+        </el-menu-item>
+      </el-sub-menu>
+    </el-sub-menu>
+    <el-menu-item index="2">
+      <i class="el-icon-menu" />
+      <span>Navigator Two</span>
+    </el-menu-item>
+    <el-menu-item
+      index="3"
+      disabled
+    >
+      <i class="el-icon-document" />
+      <span>Navigator Three</span>
+    </el-menu-item>
+    <el-menu-item index="4">
+      <i class="el-icon-setting" />
+      <span>Navigator Four</span>
+    </el-menu-item>
+  </el-menu>
+</template>
+
+<script setup lang="ts">
+</script>
+
+<style scoped lang="scss">
+</style>
