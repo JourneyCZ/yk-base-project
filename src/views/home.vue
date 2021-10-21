@@ -8,7 +8,8 @@ import { onMounted } from '@vue/runtime-core'
 
 onMounted(() => {
   getSysPermissionList().then(res => {
-    console.log(res)
+    const msg = res.msg
+    console.log(res, msg)
   })
 })
 </script>

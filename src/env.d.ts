@@ -6,3 +6,12 @@ declare module '*.vue' {
   const component: DefineComponent<{}, {}, any>
   export default component
 }
+
+// 环境变量接口
+interface ImportMetaEnv extends Readonly<Record<string, string>> {
+  readonly VITE_API_BASEURL: string
+}
+// eslint-disable-next-line no-unused-vars
+interface ImportMeta {
+  readonly env: ImportMetaEnv
+}
